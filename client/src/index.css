@@ -1,0 +1,22 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+.bg-layer {
+  background-image: url('/bg_layer.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

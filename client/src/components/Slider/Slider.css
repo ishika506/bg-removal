@@ -1,0 +1,71 @@
+/* Container styling */
+.slider {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .slider h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.4;
+  }
+  
+  /* Wrapper to stack images */
+  .slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Base image styles */
+  .slider-image {
+    width: 100%;
+    display: block;
+  }
+  
+  /* Top image that is clipped dynamically */
+  .slider-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  /* Range input */
+  .slider-range {
+    width: 100%;
+    margin-top: 20px;
+    appearance: none;
+    height: 6px;
+    background: #ccc;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  /* Custom thumb styling (WebKit) */
+  .slider-range::-webkit-slider-thumb {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background-color: #2563eb;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+    margin-top: -5px;
+  }
+  
+  /* Custom thumb styling (Firefox) */
+  .slider-range::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background-color: #2563eb;
+    border: none;
+    border-radius: 50%;
+  }
+  
