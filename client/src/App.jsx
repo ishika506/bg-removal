@@ -6,11 +6,15 @@ import BuyCredit from './pages/BuyCredit/BuyCredit';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import './index.css'; // Make sure this CSS file is imported
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 const App = () => {
   return (
     <div className="app-container">
+      <ToastContainer />
       <Navbar />
       
       <div className="content">
